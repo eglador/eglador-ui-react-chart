@@ -1,0 +1,114 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Welcome" />
+
+<img src=".github/eglador-logo.svg" alt="eglador-ui-react-chart" width="160" style={{ marginBottom: 24 }} />
+
+# eglador-ui-react-chart
+
+<div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 16 }}>
+  <img src="https://img.shields.io/npm/v/eglador-ui-react-chart?style=flat-square&color=blue" alt="npm version" />
+  <img src="https://img.shields.io/npm/dm/eglador-ui-react-chart?style=flat-square&color=green" alt="npm downloads" />
+  <img src="https://img.shields.io/npm/l/eglador-ui-react-chart?style=flat-square" alt="license" />
+  <img src="https://img.shields.io/badge/recharts-v3-8B5CF6?style=flat-square" alt="recharts v3" />
+  <img src="https://img.shields.io/badge/tailwindcss-v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="tailwind v4" />
+  <img src="https://img.shields.io/badge/react-%3E%3D18-61DAFB?style=flat-square&logo=react&logoColor=white" alt="react >= 18" />
+  <img src="https://img.shields.io/badge/typescript-ready-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="typescript" />
+</div>
+
+A modern, opinionated chart components library built on **Recharts** and **Tailwind CSS v4** for React-based projects.
+
+---
+
+## Installation
+
+```bash
+npm install eglador-ui-react-chart
+```
+
+## Setup
+
+Add the following to your global stylesheet (e.g. `app/globals.css`):
+
+```css
+@import "tailwindcss";
+@source "../node_modules/eglador-ui-react-chart";
+```
+
+## Quick Start
+
+```tsx
+import { LineChart, BarChart, PieChart } from "eglador-ui-react-chart";
+```
+
+---
+
+## Charts
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Chart</th>
+      <th align="left">Use case</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>LineChart</code></td>
+      <td>Time series, trends, multi-series comparison</td>
+    </tr>
+    <tr>
+      <td><code>BarChart</code></td>
+      <td>Category comparison (vertical/horizontal, stacked)</td>
+    </tr>
+    <tr>
+      <td><code>AreaChart</code></td>
+      <td>Filled trend chart with gradient and stacking</td>
+    </tr>
+    <tr>
+      <td><code>PieChart</code></td>
+      <td>Proportional distribution — pie or half-circle (gauge)</td>
+    </tr>
+    <tr>
+      <td><code>DoughnutChart</code></td>
+      <td>Dedicated donut variant of PieChart</td>
+    </tr>
+    <tr>
+      <td><code>RadarChart</code></td>
+      <td>Multi-dimensional profile/score comparison</td>
+    </tr>
+    <tr>
+      <td><code>RadialBarChart</code></td>
+      <td>KPI panels and progress indicators</td>
+    </tr>
+    <tr>
+      <td><code>TreemapChart</code></td>
+      <td>Hierarchical visualization sized by area</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+## Features
+
+- **Config-driven API** — `data`, `xKey`, `series` props with minimal boilerplate
+- **TypeScript-first** — full type safety on Recharts options
+- **Tailwind v4 native** — default palette, optional per-series override
+- **Responsive by default** — `responsive={false}` for fixed sizing
+- **Full Recharts power** — `margin`, `barCategoryGap`, `reverseStackOrder`, `startAngle`/`endAngle` and more
+- **Interactive Storybook** — edit `data` and `series` JSON live from the Controls panel
+
+---
+
+## Links
+
+- [GitHub](https://github.com/eglador/eglador-ui-react-chart)
+- [npm](https://www.npmjs.com/package/eglador-ui-react-chart)
+- [Recharts](https://recharts.org)
+
+---
+
+**Author:** Kenan Gündoğan — [github.com/kenangundogan](https://github.com/kenangundogan)
+
+Maintained under [Eglador](https://github.com/eglador).

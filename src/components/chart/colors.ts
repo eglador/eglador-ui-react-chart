@@ -1,0 +1,18 @@
+// Tailwind v4 paleti — *-500 değerleri (hex)
+export const DEFAULT_COLORS = [
+  "#3b82f6", // blue-500
+  "#10b981", // emerald-500
+  "#f59e0b", // amber-500
+  "#ef4444", // red-500
+  "#8b5cf6", // violet-500
+  "#ec4899", // pink-500
+  "#06b6d4", // cyan-500
+  "#84cc16", // lime-500
+] as const;
+
+export function getSeriesColor(
+  color: string | undefined,
+  index: number,
+): string {
+  return color ?? DEFAULT_COLORS[index % DEFAULT_COLORS.length];
+}
